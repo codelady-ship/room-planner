@@ -1,0 +1,43 @@
+{
+  "skill_name": "room-planner",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My bedroom is 3.2 x 3.6 m, ceiling 2.7 m. The window is on the short wall and faces north, the door is in the opposite corner. I need a double bed, a desk for studying and a wardrobe. Budget 1500 AZN. I like calm, warm Scandinavian style.",
+      "expectations": [
+        "Answers in English, short sections with headings, no long paragraphs",
+        "Does not re-ask for data already given; goes straight to the plan",
+        "ASCII plan in a code block with a stated scale, every line the same length, under 36 characters wide, with a legend",
+        "Furniture table with sizes (e.g. bed 140-160 x 200) and clearances; walkway at least 75-90 cm; says if something is tight",
+        "Three 60-30-10 palettes with hex codes, warmer/lighter because the room faces north",
+        "Lighting plan in three layers with a one-line lumen calculation (about 11.5 m2 x lux x 1.25) and 2700-3000 K for rest, 4000 K at the desk",
+        "Shopping list split into Basic / Better / Later in AZN, marked approx., with a contingency share",
+        "English image prompt with the hex codes and a free tool link",
+        "Ends with one next step and an offer of more detail"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Salam, 2 otaqlı köhnə binada yaşayıram (Bakı). Mətbəx çox kiçikdir, təxminən 2.2 x 2.8 m. Mətbəxlə qonaq otağı arasındakı divarı sökmək və qaz plitəsini pəncərənin yanına keçirmək istəyirəm. Necə edim?",
+      "expectations": [
+        "Answers in Azerbaijani",
+        "Says plainly that removing the wall needs a structural engineer and approval; does not claim the wall is or is not load-bearing",
+        "Says moving the gas stove is only for the gas company or a certified gas fitter (Azəriqaz-authorised); gives no how-to steps",
+        "Mentions permits/approval for redevelopment with a 'verify locally' style note",
+        "Still helps with what is safe: small-kitchen layout (one-wall or L), work order, storage ideas, sizes",
+        "May ask for missing details (window position, door, budget) in at most 6 numbered questions"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Как далеко поставить телевизор 55 дюймов от дивана? И какой свет нужен в гостиной 18 м²?",
+      "expectations": [
+        "Answers in Russian and only the two questions asked, without forcing the full template",
+        "TV distance about 1.7-2.25 m for 55 inches (1.2-1.6 x diagonal), screen centre near seated eye level",
+        "Lumen estimate shown as a calculation, e.g. 18 m2 x 150-200 lux x 1.25 = about 3400-4500 lm, split across ambient, task and accent",
+        "Warm 2700-3000 K recommended for a living room, CRI 90+",
+        "Short, phone-readable"
+      ]
+    }
+  ]
+}
