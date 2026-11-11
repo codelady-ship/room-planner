@@ -38,6 +38,41 @@
         "Warm 2700-3000 K recommended for a living room, CRI 90+",
         "Short, phone-readable"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Комната 3 x 4 м, потолок 2.6 м, одна дверь 80x200 и окно 150x150. Хочу покрасить стены в 2 слоя и положить ламинат. Сколько краски и ламината купить?",
+      "expectations": [
+        "Answers in Russian, only this question without the full template",
+        "Paint: shows the one-line calculation (perimeter 14 m x 2.6 = 36.4 m2 minus door 1.6 and window 2.25 = about 32.5 m2, x 2 coats / coverage about 10 m2 per litre = about 6.5 L) and says to buy 7-8 L / check the coverage on the tin",
+        "Laminate: 12 m2 plus 5-10% waste = about 12.6-13.2 m2, rounded up to whole packs; mentions underlay and/or skirting",
+        "Marks numbers as approximate and depending on the product",
+        "Short and phone-readable"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Usta mənə 2 otaqlı mənzilin təmiri üçün cəmi bir rəqəm yazıb: 9000 AZN, yarısını indi nağd istəyir, müqavilə lazım deyil deyir. Elektrik xəttini də özü dəyişəcək. Bu normaldır? Necə yoxlayım?",
+      "expectations": [
+        "Answers in Azerbaijani",
+        "Flags the red flags: one total with no itemised list, 50% cash up front, no contract",
+        "Recommends 3 written itemised quotes for the same scope and payment tied to finished stages, keeping about 10% until snags are fixed",
+        "Says electrical rewiring needs a licensed electrician and asks who exactly will do it; gives no wiring how-to",
+        "Does not say whether 9000 AZN is the 'right' price; explains what to compare instead",
+        "Contractor checklist (past work, references, written scope/dates, warranty) and a contingency line",
+        "Phone-short"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I rent a small flat on the 5th floor. The lift is 80 cm wide, 1.1 m deep, the flat door is 78 cm. I want to buy a 3-seat sofa 220 x 95 x 85 cm. Will it fit? Also how can I make the living room nicer without drilling, my landlord is strict.",
+      "expectations": [
+        "Will-it-fit check: compares the sofa's smallest dimensions (85 or 95 cm) with the 78 cm door and the lift; says it likely won't go through the door upright, suggests checking whether legs/back come off, the stairs as an alternative, or a modular/flat-pack sofa; never guarantees it fits",
+        "Renter-friendly mode: reversible ideas (rugs, plug-in lamps, tension rods, freestanding shelves, removable hooks tested first)",
+        "Mentions the landlord's written OK and move-in photos for the deposit",
+        "Does not suggest drilling, wiring or wall changes",
+        "Short and phone-readable"
+      ]
     }
   ]
 }

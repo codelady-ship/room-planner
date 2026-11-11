@@ -79,8 +79,9 @@ The middle of the screen should be close to seated eye level (about 100–110 cm
 Bedroom 3.2 × 3.6 m (11.5 m²), window in the top wall, door bottom-left opening inwards.
 At 20 cm per character the inside is 320 ÷ 20 = 16 characters wide; at 40 cm per line it is 360 ÷ 40 = 9 lines tall.
 
+Scale: 1 char = 20 cm across, 1 line = 40 cm down (written above the block).
+
 ```
-1 char = 20 cm across, 1 line = 40 cm down
 +-----======-----+
 |NN        KKKKKK|
 |BBBBBBBBBB  CC  |

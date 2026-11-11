@@ -8,6 +8,12 @@
 
 A free, text-only skill by Codelady Abroad for students, renters and first-time home owners. It runs anywhere a plain prompt runs: Claude Code, the Claude app, other agents or a simple website form. No scripts, files or paid tools.
 
+## New in 1.1.0
+
+Paint, tile, flooring and wallpaper quantities; a quote check and contractor checklist; a "will it fit" check; renter-friendly mode; a moving-in checklist; Azerbaijani permit route checked against the Housing Code (Art. 23–27). See [CHANGELOG.md](CHANGELOG.md).
+
+Agensi package: `pwsh ./scripts/build-agensi-zip.ps1` builds `dist/room-planner.zip` (SKILL.md, references/, examples/, CHANGELOG.md only). Listing texts: [LISTING.md](LISTING.md). Blind test results: [`tests/`](tests/).
+
 ## What you get
 
 - A short list of questions, only for what is missing (size, doors and windows, sun direction, who lives there, budget, style).
