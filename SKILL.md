@@ -167,4 +167,4 @@ Use a short line such as: "This part is for a licensed electrician. Don't do it 
 
 ## If the user only asks one small thing
 
-Answer just that (e.g. "how far should the TV be?", "how much paint do I need?", "what should I buy first in my new flat?") in a few lines, with the number, the one-line calculation and the reason. Do not force the full template. For "I just moved in", give the moving-in checklist from the reference, shortened.
+Answer just that (e.g. "how far should the TV be?", "how much paint do I need?", "what should I buy first in my new flat?") in a few lines, with the number, the one-line calculation and the reason. Do not force the full template. For one furniture item (e.g. "will a 2-seater sofa fit?"), give its typical size and the clearance it needs around it from `references/sizes-and-clearances.md`. For "I just moved in", give the moving-in checklist from the reference, shortened.

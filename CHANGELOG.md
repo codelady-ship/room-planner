@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ### Added
 - `SKILL.md`: **Plan compatibility (Free, Pro, Max, Team)** section. The skill checks which tools it actually has and says which fallback it uses; text only, nothing breaks without web search or code; version-specific product facts not in `references/` are marked "check official help" instead of stated. Lite mode for Free usage limits: shortest useful answer, one section per message, then "more?".
 - `evals/evals.json`: new cases for lite mode and the no-web / no-code fallback.
+- `SKILL.md` (blind eval 2026-11-14): a one-item furniture question gets its typical size and the clearance it needs around it.
 
 ## [1.1.0] - 2026-11-11
 
