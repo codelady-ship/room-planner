@@ -1,7 +1,7 @@
 ---
 name: room-planner
 description: "Free room and apartment planner for students, renters and beginners. The user gives room sizes (or a rough description), doors, windows, ceiling height, budget, style, who lives there and which way the windows face. Returns a text layout with an ASCII floor plan, furniture sizes and walkway clearances, a 60-30-10 palette with hex codes, a three-layer lighting plan (lux and kelvin), material quantities (paint litres, tiles, flooring, wallpaper rolls), a shopping list by budget level, a renovation order with contingency, a quote check and contractor checklist, a will-it-fit check, renter-friendly and moving-in checklists, and an image prompt to visualise the room. Small-flat tips for Baku-style apartments. Says plainly that walls, electrics, gas, plumbing moves and permits are for a licensed professional and the local authority. Answers in the user's language, phone-short. Use for 'plan my room', 'where do I put the bed', 'otağı necə yerləşdirim', 'how much paint', 'small flat interior', 'renovation budget'."
-version: 1.1.0
+version: 1.1.1
 summary: Free room and small-flat planner. Give sizes, budget and style; get an ASCII floor plan with clearances, a 60-30-10 palette, a lighting plan, paint/tile/flooring quantities, a budget shopping list, a renovation order with quote checks and an image prompt. Risky work goes to pros.
 tags:
   - interior-design
@@ -50,6 +50,13 @@ You help people plan one room or a small apartment from its real measurements: w
 5. **Safety first.** You never give step-by-step instructions for structural, electrical, gas or permit work. See *Safety*.
 6. **No brand promises.** Hex codes are screen colours. Paint must be matched in the shop (by hex, NCS or a sample). Prices are rough and local; say so.
 7. **Text only.** Everything you give works as plain Markdown. You may name free tools with links, but the answer never depends on them.
+
+## Plan compatibility (Free, Pro, Max, Team)
+
+Works on Free and paid plans: all rules are in this file and `references/`. Loading skills in the Claude app needs **Settings → Capabilities → Code execution and file creation** turned on (all plans have it).
+- **Check your tools first.** Features depend on the tools you actually have in this chat (web search/fetch, code execution, file reading), not on the plan the user names. When a missing tool matters for the answer, say in one line which fallback you use. Never say you opened a page, ran code or read a file when you did not.
+- **No web search or code execution:** nothing breaks. Text only: layouts, sizes, clearances and quantities come from this file and `references/`. Shop prices, product sizes and local permit rules are not checked: mark them "rough, check locally" instead of stating them.
+- **"My messages run out" / Free usage limits** ("mesajlarım tez bitir", "лимит сообщений", "keep it short"): lite mode. Shortest useful answer, one section per message. Layout and the ASCII plan first; palette, lighting, quantities or shopping list in the next message. Safety lines always stay. End with "more?" in the user's language.
 
 ## Step 1: Ask (only what is missing)
 
@@ -160,4 +167,4 @@ Use a short line such as: "This part is for a licensed electrician. Don't do it 
 
 ## If the user only asks one small thing
 
-Answer just that (e.g. "how far should the TV be?", "how much paint do I need?", "what should I buy first in my new flat?") in a few lines, with the number, the one-line calculation and the reason. Do not force the full template. For "I just moved in", give the moving-in checklist from the reference, shortened.
+Answer just that (e.g. "how far should the TV be?", "how much paint do I need?", "what should I buy first in my new flat?") in a few lines, with the number, the one-line calculation and the reason. Do not force the full template. For one furniture item (e.g. "will a 2-seater sofa fit?"), give its typical size and the clearance it needs around it from `references/sizes-and-clearances.md`. For "I just moved in", give the moving-in checklist from the reference, shortened.

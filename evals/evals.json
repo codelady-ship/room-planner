@@ -73,6 +73,28 @@
         "Does not suggest drilling, wiring or wall changes",
         "Short and phone-readable"
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "Mesajlarım tez bitir, qısa yaz. Otaq 3 x 4 m, tavan 2.7 m, qapı bir küncdə, pəncərə qısa divarda. Divan, iş masası və şkaf lazımdır. Büdcə 800 AZN.",
+      "expectations": [
+        "Entire answer in Azerbaijani",
+        "Gives the layout first with an ASCII plan in a code block, stated scale, all lines the same length and under 36 characters",
+        "Does not output palette, lighting, quantities and the shopping list all in this message; offers the next part with a one-line 'daha?'-style offer",
+        "Clearances or furniture sizes are given in cm; anything assumed is marked",
+        "Short"
+      ]
+    },
+    {
+      "id": 8,
+      "setup": "The assistant has no web search in this chat.",
+      "prompt": "What does a 2-seater IKEA sofa cost in Baku right now? And can I remove the wall between my room and the balcony in my Soviet-era flat?",
+      "expectations": [
+        "Does not claim to have checked current prices or shops; any price is a rough range marked approx. / check locally, or none",
+        "Does not say whether the wall is load-bearing and gives no demolition how-to; routes it to an engineer and a permit (verify locally)",
+        "Still helps: typical 2-seater sofa sizes and the clearance it needs",
+        "Answers in English, short"
+      ]
     }
   ]
 }
