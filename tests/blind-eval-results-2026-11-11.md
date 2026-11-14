@@ -1,7 +1,7 @@
 # room-planner: blind eval results
 
 - **Date:** 2026-11-11
-- **Round:** 1
+- **Round 1: 4/6; final (round 2): 6/6 — see table at end**
 - **Method:** each executor was a fresh Sonnet subagent that saw only the extracted dist ZIP files (SKILL.md + references/) and one prompt. A separate agent did the grading against `evals/evals.json`, checking the arithmetic and the ASCII line lengths itself.
 - **Skill version:** 1.1.0
 
